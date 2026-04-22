@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Arya & Sekar — Wedding Invitation</title>
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap"
+            rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script
+            src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <!-- Scroll Progress -->
+        <div id="scroll-progress"></div>
+
+        <!-- Noise Overlay -->
+        <div class="noise-overlay"></div>
+
+        <!-- ===================== OPENING SCREEN ===================== -->
+        <div id="opening">
+            <div class="particles-container" id="particles"></div>
+            <div class="content">
+                <p class="opening-label">The Wedding Of</p>
+                <div class="opening-ornament"></div>
+                <div class="opening-names font-display">
+                    Arya
+                    <span class="opening-ampersand gold-shimmer">&</span>
+                    Sekar
+                </div>
+                <div class="opening-ornament" style="margin-top: 20px;"></div>
+                <p class="opening-date">28 Desember 2025 — Jakarta</p>
+                <button class="btn-open" id="btn-open">
+                    <span>Buka Undangan</span>
+                    <iconify-icon icon="lucide:arrow-right"
+                        width="16"></iconify-icon>
+                </button>
+            </div>
+        </div>
+
+        <!-- ===================== MAIN CONTENT ===================== -->
+        <main id="main-content">
+
+            <!-- HERO -->
+            <section id="hero">
+                <div class="hero-content">
+                    <div class="hero-ornament-top" data-aos="fade-down"
+                        data-aos-duration="600"></div>
+                    <p class="hero-label" data-aos="fade-down"
+                        data-aos-delay="100" data-aos-duration="600">The Wedding
+                        Of</p>
+                    <h1 class="hero-name font-display" data-aos="fade-up"
+                        data-aos-delay="200" data-aos-duration="800">
+                        Arya <span class="hero-ampersand gold-shimmer">&</span>
+                        Sekar
+                    </h1>
+                    <div class="hero-ornament-bottom" data-aos="fade-up"
+                        data-aos-delay="300" data-aos-duration="600"></div>
+                    <p class="hero-date-line" data-aos="fade-up"
+                        data-aos-delay="400" data-aos-duration="600">28 . 12 .
+                        2025</p>
+                    <p class="hero-venue" data-aos="fade-up"
+                        data-aos-delay="500" data-aos-duration="600">Jakarta,
+                        Indonesia</p>
+
+                    <div class="countdown-wrap" data-aos="fade-up"
+                        data-aos-delay="600" data-aos-duration="600">
+                        <div class="countdown-box">
+                            <span class="countdown-number"
+                                id="cd-days">00</span>
+                            <span class="countdown-label">Hari</span>
+                        </div>
+                        <div class="countdown-box">
+                            <span class="countdown-number"
+                                id="cd-hours">00</span>
+                            <span class="countdown-label">Jam</span>
+                        </div>
+                        <div class="countdown-box">
+                            <span class="countdown-number"
+                                id="cd-minutes">00</span>
+                            <span class="countdown-label">Menit</span>
+                        </div>
+                        <div class="countdown-box">
+                            <span class="countdown-number"
+                                id="cd-seconds">00</span>
+                            <span class="countdown-label">Detik</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <span>Scroll</span>
+                    <iconify-icon icon="lucide:chevron-down"
+                        width="18"></iconify-icon>
+                </div>
+            </section>
+
+            <div class="divider"><div class="diamond"></div></div>
+
+            <!-- TIMELINE -->
+            <section id="timeline">
+                <div class="container">
+                    <div class="section-header">
+                        <p class="section-label" data-aos="fade-up">Our
+                            Journey</p>
+                        <h2 class="section-title font-display"
+                            data-aos="fade-up" data-aos-delay="100">Kisah Cinta
+                            Kami</h2>
+                        <p class="section-subtitle" data-aos="fade-up"
+                            data-aos-delay="200">Setiap babak membawa kami lebih
+                            dekat menuju hari ini</p>
+                    </div>
+
+                    <div class="timeline">
+                        <div class="timeline-item left" data-aos="fade-right"
+                            data-aos-duration="700">
+                            <div class="tl-node"></div>
+                            <div class="tl-content">
+                                <span class="tl-year">2019</span>
+                                <h3 class="tl-title font-display">Pertama
+                                    Bertemu</h3>
+                                <img
+                                    src="https://picsum.photos/seed/meetcafe/600/450.jpg"
+                                    alt="Pertama Bertemu" class="tl-image"
+                                    loading="lazy">
+                                <p class="tl-desc">Di sebuah kafe kecil di
+                                    bilangan Menteng, tak sengaja mata kami
+                                    bertemu. Senyummu yang hangat menjadi awal
+                                    dari segalanya.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item right" data-aos="fade-left"
+                            data-aos-duration="700">
+                            <div class="tl-node"></div>
+                            <div class="tl-content">
+                                <span class="tl-year">2020</span>
+                                <h3 class="tl-title font-display">Semakin
+                                    Dekat</h3>
+                                <img
+                                    src="https://picsum.photos/seed/latechat/600/450.jpg"
+                                    alt="Semakin Dekat" class="tl-image"
+                                    loading="lazy">
+                                <p class="tl-desc">Pandemi tak menghentikan
+                                    kami. Obrolan panjang di malam hari menjadi
+                                    ritual yang kami rindukan.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item left" data-aos="fade-right"
+                            data-aos-duration="700">
+                            <div class="tl-node"></div>
+                            <div class="tl-content">
+                                <span class="tl-year">2021</span>
+                                <h3 class="tl-title font-display">Resmi
+                                    Berpacaran</h3>
+                                <img
+                                    src="https://picsum.photos/seed/sunsetlove/600/450.jpg"
+                                    alt="Resmi Berpacaran" class="tl-image"
+                                    loading="lazy">
+                                <p class="tl-desc">Di bawah langit senja di tepi
+                                    pantai Anyer, kata-kata yang selama ini
+                                    tersimpan akhirnya terucap.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item right" data-aos="fade-left"
+                            data-aos-duration="700">
+                            <div class="tl-node"></div>
+                            <div class="tl-content">
+                                <span class="tl-year">2023</span>
+                                <h3 class="tl-title font-display">Lamaran</h3>
+                                <img
+                                    src="https://picsum.photos/seed/ringmoment/600/450.jpg"
+                                    alt="Lamaran" class="tl-image"
+                                    loading="lazy">
+                                <p class="tl-desc">Dengan cincin yang sempurna
+                                    dan detak jantung yang berdebar kencang, aku
+                                    bertanya,
+                                    "Maukah kamu menikah denganku?"</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item left" data-aos="fade-right"
+                            data-aos-duration="700">
+                            <div class="tl-node"></div>
+                            <div class="tl-content">
+                                <span class="tl-year">2025</span>
+                                <h3
+                                    class="tl-title font-display">Pernikahan</h3>
+                                <img
+                                    src="https://picsum.photos/seed/weddingday/600/450.jpg"
+                                    alt="Pernikahan" class="tl-image"
+                                    loading="lazy">
+                                <p class="tl-desc">Akhirnya, hari yang kami
+                                    tunggu tiba. Dengan penuh cinta dan doa dari
+                                    keluarga, kami siap melangkah bersama
+                                    selamanya.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="divider"><div class="diamond"></div></div>
+
+            <!-- EVENTS -->
+            <section id="events">
+                <div class="container">
+                    <div class="section-header">
+                        <p class="section-label" data-aos="fade-up">Save The
+                            Date</p>
+                        <h2 class="section-title font-display"
+                            data-aos="fade-up" data-aos-delay="100">Rangkaian
+                            Acara</h2>
+                    </div>
+
+                    <div class="events-grid">
+                        <div class="event-card" data-aos="fade-up"
+                            data-aos-delay="100" data-aos-duration="600">
+                            <div class="event-icon">
+                                <iconify-icon icon="lucide:heart"
+                                    width="28"></iconify-icon>
+                            </div>
+                            <h3 class="event-type font-display">Akad Nikah</h3>
+                            <p class="event-date">Sabtu, 28 Desember 2025</p>
+                            <p class="event-time">08.00 — 10.00 WIB</p>
+                            <div class="event-venue">
+                                <p class="event-venue-label">Lokasi</p>
+                                Masjid Istiqlal<br>Jl. Taman Wijaya Kusuma,
+                                Jakarta Pusat
+                            </div>
+                        </div>
+
+                        <div class="event-card" data-aos="fade-up"
+                            data-aos-delay="200" data-aos-duration="600">
+                            <div class="event-icon">
+                                <iconify-icon icon="lucide:sparkles"
+                                    width="28"></iconify-icon>
+                            </div>
+                            <h3 class="event-type font-display">Resepsi</h3>
+                            <p class="event-date">Sabtu, 28 Desember 2025</p>
+                            <p class="event-time">11.00 — 14.00 WIB</p>
+                            <div class="event-venue">
+                                <p class="event-venue-label">Lokasi</p>
+                                The Ritz-Carlton Jakarta<br>Jl. Pacific Place,
+                                SCBD, Jakarta Selatan
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="divider"><div class="diamond"></div></div>
+
+            <!-- GALLERY -->
+            <section id="gallery">
+                <div class="container">
+                    <div class="section-header">
+                        <p class="section-label" data-aos="fade-up">Moments</p>
+                        <h2 class="section-title font-display"
+                            data-aos="fade-up" data-aos-delay="100">Galeri
+                            Kenangan</h2>
+                        <p class="section-subtitle" data-aos="fade-up"
+                            data-aos-delay="200">Momen-momen indah yang kami
+                            simpan</p>
+                    </div>
+
+                    <div class="gallery-grid">
+                        <div class="gallery-item" data-aos="zoom-in"
+                            data-aos-delay="100" data-index="0">
+                            <img
+                                src="https://picsum.photos/seed/galprewed1/600/900.jpg"
+                                alt="Gallery 1" loading="lazy">
+                            <div class="gallery-overlay"><iconify-icon
+                                    icon="lucide:expand"></iconify-icon></div>
+                        </div>
+                        <div class="gallery-item" data-aos="zoom-in"
+                            data-aos-delay="200" data-index="1">
+                            <img
+                                src="https://picsum.photos/seed/galprewed2/600/600.jpg"
+                                alt="Gallery 2" loading="lazy">
+                            <div class="gallery-overlay"><iconify-icon
+                                    icon="lucide:expand"></iconify-icon></div>
+                        </div>
+                        <div class="gallery-item" data-aos="zoom-in"
+                            data-aos-delay="300" data-index="2">
+                            <img
+                                src="https://picsum.photos/seed/galprewed3/600/600.jpg"
+                                alt="Gallery 3" loading="lazy">
+                            <div class="gallery-overlay"><iconify-icon
+                                    icon="lucide:expand"></iconify-icon></div>
+                        </div>
+                        <div class="gallery-item" data-aos="zoom-in"
+                            data-aos-delay="400" data-index="3">
+                            <img
+                                src="https://picsum.photos/seed/galprewed4/600/900.jpg"
+                                alt="Gallery 4" loading="lazy">
+                            <div class="gallery-overlay"><iconify-icon
+                                    icon="lucide:expand"></iconify-icon></div>
+                        </div>
+                        <div class="gallery-item" data-aos="zoom-in"
+                            data-aos-delay="500" data-index="4">
+                            <img
+                                src="https://picsum.photos/seed/galprewed5/600/600.jpg"
+                                alt="Gallery 5" loading="lazy">
+                            <div class="gallery-overlay"><iconify-icon
+                                    icon="lucide:expand"></iconify-icon></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="divider"><div class="diamond"></div></div>
+
+            <!-- LOCATION -->
+            <section id="location">
+                <div class="container">
+                    <div class="section-header">
+                        <p class="section-label" data-aos="fade-up">Find Us</p>
+                        <h2 class="section-title font-display"
+                            data-aos="fade-up" data-aos-delay="100">Lokasi
+                            Acara</h2>
+                        <p class="section-subtitle" data-aos="fade-up"
+                            data-aos-delay="200">The Ritz-Carlton Jakarta,
+                            Pacific Place</p>
+                    </div>
+
+                    <div class="map-wrapper" data-aos="fade-up"
+                        data-aos-delay="100" data-aos-duration="700">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2904200288936!2d106.8105573!3d-6.2247394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sThe%20Ritz-Carlton%20Jakarta%2C%20Pacific%20Place!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
+                            allowfullscreen loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Lokasi Acara">
+                        </iframe>
+                    </div>
+                    <div class="map-btn-wrap" data-aos="fade-up"
+                        data-aos-delay="200">
+                        <a
+                            href="https://maps.google.com/?q=The+Ritz-Carlton+Jakarta+Pacific+Place"
+                            target="_blank" rel="noopener" class="btn-maps">
+                            <iconify-icon icon="lucide:map-pin"
+                                width="16"></iconify-icon>
+                            Buka di Google Maps
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="divider"><div class="diamond"></div></div>
+
+            <!-- RSVP -->
+            <section id="rsvp">
+                <div class="container">
+                    <div class="section-header">
+                        <p class="section-label"
+                            data-aos="fade-up">Confirmation</p>
+                        <h2 class="section-title font-display"
+                            data-aos="fade-up" data-aos-delay="100">Konfirmasi
+                            Kehadiran</h2>
+                        <p class="section-subtitle" data-aos="fade-up"
+                            data-aos-delay="200">Merupakan kehormatan bagi kami
+                            jika Anda hadir</p>
+                    </div>
+
+                    <!-- Attendance Stats -->
+                    <div class="rsvp-stats" data-aos="fade-up"
+                        data-aos-delay="100" data-aos-duration="600">
+                        <div class="stat-card">
+                            <span class="stat-number" id="stat-total">0</span>
+                            <span class="stat-label">Total Konfirmasi</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number stat-hadir"
+                                id="stat-hadir">0</span>
+                            <span class="stat-label">Hadir</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number stat-tidak"
+                                id="stat-tidak">0</span>
+                            <span class="stat-label">Tidak Hadir</span>
+                        </div>
+                    </div>
+
+                    <!-- Form -->
+                    <form class="rsvp-form" id="rsvp-form" data-aos="fade-up"
+                        data-aos-delay="200" data-aos-duration="700">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="rsvp-name">Nama
+                                    Lengkap</label>
+                                <input type="text" id="rsvp-name"
+                                    class="form-input"
+                                    placeholder="Masukkan nama Anda" required>
+                                <p class="form-error" id="error-name">Mohon
+                                    masukkan nama Anda</p>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label"
+                                    for="rsvp-attendance">Konfirmasi
+                                    Kehadiran</label>
+                                <select id="rsvp-attendance" class="form-select"
+                                    required>
+                                    <option value disabled selected>Pilih
+                                        konfirmasi</option>
+                                    <option value="hadir">Hadir — Saya akan
+                                        datang</option>
+                                    <option value="tidak">Tidak Hadir — Maaf,
+                                        tidak bisa</option>
+                                    <option value="ragu">Masih Ragu — Akan
+                                        konfirmasi nanti</option>
+                                </select>
+                                <p class="form-error"
+                                    id="error-attendance">Mohon pilih konfirmasi
+                                    kehadiran</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="rsvp-jumlah">Jumlah
+                                Tamu</label>
+                            <select id="rsvp-jumlah" class="form-select">
+                                <option value="1" selected>1 Orang</option>
+                                <option value="2">2 Orang</option>
+                                <option value="3">3 Orang</option>
+                                <option value="4">4 Orang</option>
+                                <option value="5">5 Orang</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="rsvp-message">Ucapan
+                                & Doa untuk Kedua Mempelai</label>
+                            <textarea id="rsvp-message" class="form-textarea"
+                                placeholder="Tulis ucapan dan doa Anda di sini..."
+                                rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit"
+                            id="btn-submit">
+                            <span class="btn-submit-text">Kirim
+                                Konfirmasi</span>
+                            <span class="btn-submit-loading"
+                                style="display:none;">
+                                <iconify-icon icon="lucide:loader-2" width="18"
+                                    class="spin-icon"></iconify-icon>
+                                Mengirim...
+                            </span>
+                        </button>
+                    </form>
+
+                    <!-- RSVP Form -->
+
+                    <!-- Wall of Wishes -->
+                    <div class="wishes-section" id="wishes-section"
+                        style="display:none;">
+                        <div class="wishes-header">
+                            <div class="divider"><div
+                                    class="diamond"></div></div>
+                            <h3 class="wishes-title font-display">Ucapan &
+                                Doa</h3>
+                        </div>
+                        <div class="wishes-grid" id="wishes-grid">
+                            <!-- Rendered by JS -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <footer>
+                <div class="divider"><div class="diamond"></div></div>
+                <p class="footer-names font-display gold-shimmer">Arya &
+                    Sekar</p>
+                <p class="footer-note">28 Desember 2025 — Dengan cinta, kami
+                    mengundang Anda</p>
+            </footer>
+        </main>
+
+        <!-- LIGHTBOX -->
+        <div id="lightbox">
+            <button class="lb-close" id="lb-close" aria-label="Tutup">
+                <iconify-icon icon="lucide:x"></iconify-icon>
+            </button>
+            <button class="lb-nav lb-prev" id="lb-prev" aria-label="Sebelumnya">
+                <iconify-icon icon="lucide:chevron-left"></iconify-icon>
+            </button>
+            <img id="lb-img" src alt="Preview">
+            <button class="lb-nav lb-next" id="lb-next"
+                aria-label="Selanjutnya">
+                <iconify-icon icon="lucide:chevron-right"></iconify-icon>
+            </button>
+            <span class="lb-counter" id="lb-counter"></span>
+        </div>
+
+        <!-- MUSIC TOGGLE -->
+        <button id="music-toggle" aria-label="Toggle Music">
+            <iconify-icon icon="lucide:music" id="music-icon"
+                width="20"></iconify-icon>
+        </button>
+
+        <!-- TOAST -->
+        <div id="toast"></div>
+
+        <!-- SUCCESS MODAL -->
+        <div id="success-modal">
+            <div class="modal-backdrop"></div>
+            <div class="modal-content">
+                <div class="modal-icon-wrap">
+                    <iconify-icon icon="lucide:check-circle"
+                        width="48"></iconify-icon>
+                </div>
+                <h3 class="modal-title font-display">Terima Kasih!</h3>
+                <p class="modal-message">Konfirmasi kehadiran Anda telah kami
+                    terima. Semoga kita bisa bertemu di hari bahagia kami.</p>
+                <button class="btn-modal-close" id="modal-close">Tutup</button>
+            </div>
+        </div>
+
+        <!-- AUDIO -->
+        <audio id="bg-music" loop preload="auto">
+            <source
+                src="audio/musik.mp3"
+                type="audio/mpeg">
+        </audio>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
