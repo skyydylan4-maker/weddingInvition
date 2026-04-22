@@ -1,3 +1,22 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const urlParams = new URLSearchParams(window.location.search);
+  let nama = urlParams.get('to');
+
+  const el = document.getElementById("namaTamu");
+
+  if (nama && el) {
+    // ganti + jadi spasi
+    nama = nama.replace(/\+/g, ' ');
+
+    // kapital huruf depan tiap kata
+    nama = nama.replace(/\b\w/g, function (c) {
+      return c.toUpperCase();
+    });
+
+    el.innerText = nama;
+  }
+});
+
 // ================= INIT =================
 AOS.init({ once: true });
 
