@@ -220,7 +220,7 @@ function splitText(el){
         });
     },200);
 }
-splitText(document.querySelector(".hero-name"));
+//splitText(document.querySelector(".hero-name"));
 
 // RIPPLE FIX
 document.querySelectorAll("button").forEach(btn=>{

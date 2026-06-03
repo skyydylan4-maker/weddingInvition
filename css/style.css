@@ -421,15 +421,21 @@ body {
     line-height: 1.05;
     letter-spacing: -0.01em;
     color: #1b1b18;
+    white-space: normal;
+    word-break: break-word;
 }
 
+
 .hero-ampersand {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(36px, 8vw, 72px);
-    font-style: italic;
     display: block;
-    margin: 4px 0;
+    font-size: clamp(52px, 12vw, 100px);
+    font-style: normal;
+    margin-top: 0;
+    line-height: 1;
 }
+
+
+
 
 .hero-date-line {
     font-size: 22px;
@@ -1398,7 +1404,13 @@ footer .footer-note {
     }
 
     .hero-name {
-        font-size: clamp(36px, 16vw, 60px);
+        font-size: clamp(32px, 14vw, 60px);
+        line-height: 1.05;
+    }
+
+    .hero-ampersand {
+        font-size: clamp(24px, 9vw, 42px);
+        margin: 0 4px 0 0;
     }
 
     .hero-date-line {
