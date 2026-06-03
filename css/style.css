@@ -1257,7 +1257,40 @@ footer .footer-note {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
     body {
-        font-size: 16px;
+        font-size: 15px;
+    }
+
+    .container {
+        padding: 0 18px;
+    }
+
+    #hero {
+        padding: 60px 18px;
+    }
+
+    .section-header {
+        margin-bottom: 48px;
+    }
+
+    .section-title {
+        font-size: clamp(30px, 8vw, 48px);
+    }
+
+    .section-subtitle {
+        max-width: 100%;
+        font-size: 18px;
+    }
+
+    .hero-name {
+        font-size: clamp(42px, 14vw, 84px);
+    }
+
+    .hero-date-line {
+        font-size: 18px;
+    }
+
+    .hero-venue {
+        font-size: 15px;
     }
 
     .timeline::before {
@@ -1280,13 +1313,11 @@ footer .footer-note {
         height: 11px;
     }
 
-    .events-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
     .countdown-wrap {
-        gap: 8px;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(64px, 1fr));
+        gap: 10px;
+        justify-items: center;
     }
 
     .countdown-box {
@@ -1298,15 +1329,14 @@ footer .footer-note {
         font-size: 26px;
     }
 
-    .event-card {
-        padding: 32px 24px;
+    .events-grid,
+    .wishes-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 
-    #music-toggle {
-        bottom: 20px;
-        right: 20px;
-        width: 44px;
-        height: 44px;
+    .event-card {
+        padding: 32px 24px;
     }
 
     .form-row {
@@ -1320,7 +1350,7 @@ footer .footer-note {
     }
 
     .stat-card {
-        min-width: 90px;
+        min-width: 100%;
         padding: 18px 20px;
     }
 
@@ -1328,23 +1358,88 @@ footer .footer-note {
         font-size: 28px;
     }
 
-    .wishes-grid {
-        grid-template-columns: 1fr;
+    .btn-open,
+    .btn-submit,
+    .btn-maps {
+        width: 100%;
+    }
+
+    #music-toggle {
+        bottom: 18px;
+        right: 18px;
+        width: 44px;
+        height: 44px;
     }
 }
 
 @media (max-width: 480px) {
+    #hero {
+        padding: 48px 16px;
+    }
+
+    #opening .content,
+    .section-header,
+    .event-card,
+    .rsvp-form,
+    .modal-content {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .opening-label,
+    .hero-label,
+    .section-label {
+        font-size: 13px;
+        letter-spacing: 0.16em;
+    }
+
+    .opening-names {
+        font-size: clamp(32px, 14vw, 56px);
+    }
+
+    .hero-name {
+        font-size: clamp(36px, 16vw, 60px);
+    }
+
+    .hero-date-line {
+        font-size: 17px;
+    }
+
+    .hero-venue {
+        font-size: 14px;
+    }
+
     .countdown-wrap {
-        flex-wrap: wrap;
+        grid-template-columns: repeat(2, minmax(60px, 1fr));
     }
 
     .countdown-box {
-        width: 65px;
-        height: 65px;
+        width: 62px;
+        height: 62px;
     }
 
-    .modal-content {
-        padding: 36px 24px;
+    .timeline-item.left .tl-content,
+    .timeline-item.right .tl-content {
+        width: calc(100% - 42px);
+        padding-left: 32px;
+    }
+
+    .event-card {
+        padding: 28px 20px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .btn-open,
+    .btn-submit,
+    .btn-maps {
+        padding: 14px 18px;
+    }
+
+    .wishes-grid {
+        grid-template-columns: 1fr;
     }
 }
 
